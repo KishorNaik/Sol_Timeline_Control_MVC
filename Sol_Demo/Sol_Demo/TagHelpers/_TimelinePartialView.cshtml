@@ -1,0 +1,20 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model List<Sol_Demo.TagHelpers.Models.TimelineTagHelperModel>
+
+<div class="main-timeline">
+    @foreach (var item in Model)
+    {
+        <div class="timeline">
+            <a href="@item.TimelineUI?.RedirectUrl" class="timeline-content">
+                <div class="timeline-icon">
+                    <i class="@item?.TimelineUI?.IconCss"></i>
+                </div>
+                <span class="timeline-year">@item.Year</span>
+                <h3 class="title">@item.Title</h3>
+                <p class="description">
+                    @item.Description
+                </p>
+            </a>
+        </div>
+    }
+</div>

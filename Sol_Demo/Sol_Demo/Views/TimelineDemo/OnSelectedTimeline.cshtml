@@ -1,0 +1,27 @@
+﻿@{
+    ViewData["Title"] = "OnSelectedTimeline";
+}
+@model Sol_Demo.ViewModels.TimelineViewModel
+
+<h1>OnSelectedTimeline</h1>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="main-timeline">
+                <div class="timeline">
+                    <a href="#" class="timeline-content">
+                        <div class="timeline-icon">
+                            <i class="fa fa-globe"></i>
+                        </div>
+                        <span class="timeline-year">@Model.TimelineM.Year</span>
+                        <h3 class="title">@Model.TimelineM.Title</h3>
+                        <p class="description">
+                            @Model.TimelineM.Content
+                        </p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

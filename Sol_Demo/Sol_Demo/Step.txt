@@ -1,0 +1,41 @@
+﻿Step 1:
+Go to wwwroot folder, In css folder, create timeline.css file.
+* Check css folder
+
+Step 2:
+Register Font-Awsome js
+https://fontawesome.com/v4.7.0/get-started/
+
+you will get following js embeded script
+<script src="https://use.fontawesome.com/5185086ad0.js"></script>
+
+Step 3:
+Go layout.cshtml file, add following referenace
+
+	3.1 Add timeline.css file referenace in head tag
+	<link rel="stylesheet" href="~/css/timeline.css" />
+
+	3.2 Add font-awesome js referenace
+	<script src="https://use.fontawesome.com/5185086ad0.js"></script>
+
+Step 4:
+Add a Tag helper folder, create a Timeline Tag Helper class.
+* Go to Tag helper folder and check classes.
+
+Step 5:
+Register Timeline Tag helper class in ViewImport.cshtml file.
+@addTagHelper *,Sol_Demo
+
+Step 6:
+Create a Timeline Model.
+
+Step 7:
+Create a timeline repository.
+
+Step 8:
+Register a timeline repository in DI
+
+Step 9:
+Create a Timeline Demo Controller.
+
+
